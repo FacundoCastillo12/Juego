@@ -1,0 +1,125 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+body {
+	font-size: 1.2rem;
+	min-height: 100%;
+    background: linear-gradient(to right, #485563, #29323c);
+}
+.grid-contenedor > * {
+    text-align: center;
+}
+.titulo{
+    grid-area: titulo;
+    text-align: center;
+}
+.barra-superior{
+    grid-area: barra-superior;
+    background-color: rgb(2, 2, 2);
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+}
+.menu{
+    grid-area: menu;
+    background-color: rgb(25, 26, 26);
+}
+.barra-inferior{
+    grid-area: barra-inferior;
+    background-color: rgb(50, 13, 138);
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
+}
+.pie-pagina{
+    grid-area: pie-pagina;
+    background-color: lightgrey;
+    text-align: center;
+}
+.grid-contenedor{
+    display: grid;
+	grid-template:
+		'titulo' 50px
+        'barra-superior' 60px
+		'menu' auto
+		'barra-inferior' 50px
+		'pie-pagina' 60px;
+}
+
+@media (min-width: 540px) {
+	.grid-contenedor {
+		grid-template:
+			'titulo titulo' 50px
+            'barra-superior barra-superior' 50px
+			'menu menu' auto
+			'barra-inferior barra-inferior' 50px
+			'pie-pagina pie-pagina' 60px /
+			auto 200px;
+	}
+}
+
+@media (min-width: 960px) {
+	.grid-contenedor {
+		grid-template:
+			'titulo titulo titulo' 60px
+            'barra-superior barra-superior' 60px
+			'menu menu menu' auto
+			'barra-inferior barra-inferior barra-inferior' 100px
+            'pie-pagina pie-pagina pie-pagina' 100px /
+			200px auto 200px;
+	}
+}
+h1 {
+	font-size: 2em;
+	text-align: center;
+	font-family: 'Pokemon Solid', sans-serif;
+	color: yellow;
+}
+.menu-juego{
+    background-color: black;
+}
+
+.texto-barra {
+    font-size: 20px;
+    color: white;
+}
+.texto-menu{
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.caja-texto{
+    border: 2px solid black;
+    width: auto;
+    height: 300px;
+    overflow:auto;
+    background: rgb(2,0,36);
+}
+.imagen{
+    height: 400px;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+@keyframes escribiendo {
+    0%{
+        width: 0;
+    }
+}
+@keyframes blink  {
+    50% {
+        border-color: transparent;
+      }
+}
+
+.oculto{
+    display: none;
+}

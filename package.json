@@ -1,0 +1,22 @@
+{
+  "name": "juego",
+  "version": "1.0.0",
+  "description": "Juego personal",
+  "main": "index.html",
+  "scripts": {
+    "empezar": "http-server -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FacundoCastillo12/Juego.git"
+  },
+  "author": "Facundo Castillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FacundoCastillo12/Juego/issues"
+  },
+  "homepage": "https://github.com/FacundoCastillo12/Juego#readme",
+  "devDependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}

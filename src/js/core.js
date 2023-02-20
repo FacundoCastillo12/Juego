@@ -68,14 +68,14 @@ export function throwDiceAttack() {
 export function calculateDamage(attackTotal, luck, critical = 0) {
   return attackTotal * (luck + critical);
 }
-export function calculateDefense(defenseTotal, luck) {
-  return ((defenseTotal * luck) / 100) * 10;
+export function calculateDefense(defenseTotal, luck, dogde = 0) {
+  const totalLuck = luck + dogde;
+  return ((defenseTotal * totalLuck) / 100) * 10;
 }
 export function calculateRealAttack(attackTotal, defenseOpponent) {
-  if (attackTotal === 0) {
+  if (attackTotal === 0 || defenseOpponent >= attackTotal) {
     return 0;
-  } else {
-    return attackTotal - defenseOpponent;
   }
+  return attackTotal - defenseOpponent;
 }
 

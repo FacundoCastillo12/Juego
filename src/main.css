@@ -13,13 +13,14 @@ body {
 }
 .grid-contenedor > * {
     text-align: center;
+
 }
-.titulo{
-    grid-area: titulo;
+.title{
+    grid-area: title;
     text-align: center;
 }
-.barra-superior{
-    grid-area: barra-superior;
+.top-bar{
+    grid-area: top-bar;
     background-color: rgb(2, 2, 2);
     text-align: center;
     border-radius: 20px 20px 0px 0px;
@@ -27,36 +28,37 @@ body {
 .menu{
     grid-area: menu;
     background-color: rgb(25, 26, 26);
+
 }
-.barra-inferior{
-    grid-area: barra-inferior;
+.bottom-bar{
+    grid-area: bottom-bar;
     background-color: rgb(50, 13, 138);
     text-align: center;
     border-radius: 0px 0px 20px 20px;
 }
-.pie-pagina{
-    grid-area: pie-pagina;
+.footer{
+    grid-area: footer;
     background-color: lightgrey;
     text-align: center;
 }
 .grid-contenedor{
     display: grid;
 	grid-template:
-		'titulo' 50px
-        'barra-superior' 60px
+		'title' 50px
+        'top-bar' 60px
 		'menu' auto
-		'barra-inferior' 50px
-		'pie-pagina' 60px;
+		'bottom-bar' 50px
+		'footer' 60px;
 }
 
 @media (min-width: 540px) {
 	.grid-contenedor {
 		grid-template:
-			'titulo titulo' 50px
-            'barra-superior barra-superior' 50px
+			'title title' 50px
+            'top-bar top-bar' 50px
 			'menu menu' auto
-			'barra-inferior barra-inferior' 50px
-			'pie-pagina pie-pagina' 60px /
+			'bottom-bar bottom-bar' 50px
+			'footer footer' 60px /
 			auto 200px;
 	}
 }
@@ -64,11 +66,11 @@ body {
 @media (min-width: 960px) {
 	.grid-contenedor {
 		grid-template:
-			'titulo titulo titulo' 60px
-            'barra-superior barra-superior' 60px
+			'title title title' 20px
+            'top-bar top-bar top-bar' 60px
 			'menu menu menu' auto
-			'barra-inferior barra-inferior barra-inferior' 100px
-            'pie-pagina pie-pagina pie-pagina' 100px /
+			'bottom-bar bottom-bar bottom-bar' 50px
+            'footer footer footer' 60px /
 			200px auto 200px;
 	}
 }
@@ -78,29 +80,29 @@ h1 {
 	font-family: 'Pokemon Solid', sans-serif;
 	color: yellow;
 }
-.menu-juego{
+.menu-game{
     background-color: black;
 }
 
-.texto-barra {
+.text-bar {
     font-size: 20px;
     color: white;
 }
-.texto-menu{
+.text-menu{
     font-size: 20px;
     color: white;
     text-align: left;
     margin-left: 20px;
 }
 
-.caja-texto{
+.text-box{
     border: 2px solid black;
     width: auto;
     height: 300px;
     overflow:auto;
     background: rgb(2,0,36);
 }
-.imagen{
+.image{
     height: 400px;
     width: 400px;
     display: block;
@@ -109,17 +111,7 @@ h1 {
     width: 50%;
 }
 
-@keyframes escribiendo {
-    0%{
-        width: 0;
-    }
-}
-@keyframes blink  {
-    50% {
-        border-color: transparent;
-      }
-}
 
-.oculto{
+.hidden{
     display: none;
 }

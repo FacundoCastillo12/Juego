@@ -15,83 +15,65 @@
 
 </head>
 <body class="grid-contenedor">
-    <div class="titulo mb-2" hidden>
-        <h1 id="nombre-titulo">Juego del trascendental</h1>
+    <div class="title mb-2" hidden>
+        <h1 id="name-title">Juego del trascendental</h1>
     </div>
-    <div class="ingreso container oculto">
+    <div class="entry container hidden">
         <div class="row g-3 align-items-center">
             <div class="col-auto">
-                <label for="usuario">Ingresar nombre del usuario</label>
-                <input type="text" id="usuario">
+                <label for="user">Ingresar nombre del usuario</label>
+                <input type="text" id="user">
             </div>
             <div class="col-auto">
-                <button id="enviar" class="btn btn-primary mb-2">Enviar</button>
+                <button id="start" class="btn btn-primary mb-2">Enviar</button>
             </div>
         </div>
     </div>
-    <div class="barra-superior container">
+    <div class="top-bar container">
         <div class="row">
-            <div class="col-2 texto-barra">
-                <p>ID: <strong id="usuario-nombre">Usuario</strong></p>
+            <div class="col-2 text-bar">
+                <p>ID: <strong id="user-name">Usuario</strong></p>
             </div>
-            <div class="col-2 texto-barra">
+            <div class="col-2 text-bar">
                 <p>Nivel: <strong>1</strong></p>
             </div>
-            <div class="col-2 texto-barra">
+            <div class="col-2 text-bar">
                   <p>Salud: <strong>100</strong></p>
               </div>
-            <div class="col-2 texto-barra" hidden>
+            <div class="col-2 text-bar" hidden>
                 <p>Progreso: <strong>Fase 1</strong></p>
             </div>
-            <div class="col-4 texto-barra">
+            <div class="col-4 text-bar">
                 <p>Tiempo de Juego: <strong>20 minutos</strong></p>
             </div>
           </div>
     </div>
     <div class="menu container">
-        <div class="card menu-juego">
+        <div class="card menu-game">
             <div>
-                <img class="imagen" src="./assets/sprites/enemies/vehicle-2-preview-big.gif" class="card-img-top" alt="...">
+                <img class="image" src="./assets/sprites/enemies/vehicle-2-preview-big.gif" class="card-img-top" alt="...">
             </div>
             <div class="col-lg-12 mb-4">
-                <div class="caja-texto">
-                    <p class="texto-menu">
+                <div class="text-box">
+                    <p class="text-menu">
                         La luz lentamente entró por la ventana. 
                     </p>
-                    <p class="texto-menu">
+                    <p class="text-menu">
                         Tu cabeza duele y sientes miles de pinchazos en tu cerebro. 
                     </p>
-                    <p class="texto-menu">
+                    <p class="text-menu">
                         Usuario: Lentamente te levantas de la cama intentas acercarte a la ventana.
                     </p>
-                    <p class="texto-menu">
+                    <p class="text-menu">
                         Usuario: Has infligido <strong>20</strong> de daño a [enemigo]!
-                    </p>
-                    <p class="texto-menu">
-                        Enemigo: Te ha infligido <strong>20</strong> de daño el [enemigo]!
-                    </p>
-                    <p class="texto-menu">
-                        Enemigo: Te ha infligido <strong>20</strong> de daño el [enemigo]!
-                    </p>
-                    <p class="texto-menu">
-                        Enemigo: Te ha infligido <strong>20</strong> de daño el [enemigo]!
-                    </p>
-                    <p class="texto-menu">
-                        Enemigo: Te ha infligido <strong>20</strong> de daño el [enemigo]!
-                    </p>
-                    <p class="texto-menu">
-                        Enemigo: Te ha infligido <strong>20</strong> de daño el [enemigo]!
-                    </p>
-                    <p class="texto-menu">
-                        Enemigo: Te ha infligido <strong>20</strong> de daño el [enemigo]!
                     </p>
                     
                 </div>
              </div>
-             <div class="container decisiones " >
-                <button id="decision-uno" type="button" class="btn btn-primary">Decision 1</button>
-                <button id="decision-dos" type="button" class="btn btn-primary">Decision 2</button>
-                <button id="decision-tres" type="button" class="btn btn-primary">Decision 3</button>
+             <div class="container decisions" >
+                <button id="decision-one" type="button" class="btn btn-primary">Decision 1</button>
+                <button id="decision-two" type="button" class="btn btn-primary">Decision 2</button>
+                <button id="decision-three" type="button" class="btn btn-primary">Decision 3</button>
             </div>
              <button>Continuar</button>
           </div>
@@ -102,11 +84,11 @@
             
         </div>
     </div>
-    <div class="barra-inferior container">
+    <div class="bottom-bar container">
         <div class="row">
             <div class="col-2">
               <div>
-                <button type="button" class="btn btn-primary">Atacar</button>
+                <button type="button" id="attack" class="btn btn-primary">Atacar</button>
               </div>
             </div>
             <div class="col-2">
@@ -116,13 +98,13 @@
                 <button type="button" class="btn btn-dark">Objetos</button>
             </div>
             <div class="col-4">
-                <button type="button" class="btn btn-info">Estado</button>
+                <button type="button" id="state" class="btn btn-info">Estado</button>
             </div>
           </div>
     </div>
 
-    <div class="pie-pagina mt-4">
-        <p id="pie">
+    <div class="footer mt-4">
+        <p id="text-footer">
             Juego creada por
             <a href="https://github.com/FacundoCastillo12">Facundo Castillo</a>
         </p>

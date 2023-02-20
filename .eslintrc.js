@@ -16,6 +16,15 @@ module.exports = {
     'no-process-exit': 'off',
     'object-shorthand': 'off',
     'class-methods-use-this': 'off',
-
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'ignorePackages',
+        jsx: 'ignorePackages',
+        ts: 'ignorePackages',
+        tsx: 'ignorePackages',
+      },
+    ],
   },
 };
